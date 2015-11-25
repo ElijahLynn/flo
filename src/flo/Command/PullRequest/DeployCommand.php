@@ -231,6 +231,7 @@ class DeployCommand extends Command {
       );
     }
 
+    $output->writeln($process->getOutput());
     $output->writeln("<info>PR #$pr_number has been deployed to {$url}.</info>");
   }
 }
